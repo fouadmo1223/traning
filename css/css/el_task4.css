@@ -1,0 +1,7 @@
+div{
+    background-color: brown;
+    width: fit-content;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+}

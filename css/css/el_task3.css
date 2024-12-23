@@ -1,0 +1,47 @@
+
+
+/* ######################  first part  */
+
+
+/* div{
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+}
+.shape1,.shape2,.shape3{
+    outline: 5px solid black;
+
+}
+
+.shape1{
+    border: 5px solid red;
+}
+.shape2{
+   border-color: blue green;
+   border-width: 5px;
+   border-style: solid; 
+}
+.shape3{
+    border-color: red green blue yellow;
+    border-width: 5px;
+    border-style: dashed; 
+ } */
+
+/* ######################  second part  */
+
+div{
+    background-color: rgba(128, 128, 128, 0.187);
+}
+span{
+    border: 3px solid blue;
+}
+
+.element-2{
+    visibility: hidden;
+}
+
+.element-1{
+    padding: 10px;
+    /* border-left: 5px solid blue; */
+}

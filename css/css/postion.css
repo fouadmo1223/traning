@@ -1,0 +1,84 @@
+
+/* first part  */
+
+/* div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+}
+.blue{
+    background-color: blue;
+    left: 20px;
+    top: 20px;
+    z-index: -1;
+
+}
+.green{
+    background-color: green;
+    left: 40px;
+    top: 40px;
+    z-index: 1;
+
+}
+.red{
+    background-color: red;
+    left: 60px;
+    top: 60px;
+    z-index: 3;
+
+}
+.black{
+    background-color: black;
+    left: 20px;
+    top: 20px;
+
+} */
+
+/* second part */
+
+/* div{
+    width: 400px;
+    position: relative;
+    left: 20vw;
+    top: 40vh;
+    border-color: rgba(255, 0, 0, 0.673) rgba(0, 0, 255, 0.659);
+    border-style: solid;
+    border-width: 4px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.468);
+    
+
+
+}
+
+div span{
+    background-color: blue;
+    color: white;
+    padding: 2px 7px;
+    position: absolute;
+    z-index: 100;
+}
+
+.top-left{
+    border-right: 4px solid rgba(255, 0, 0, 0.673) ;
+    top: -14%;
+    left: -3%;
+}
+
+.top-right{
+    border-left: 4px solid rgba(255, 0, 0, 0.673) ;
+    top: -14%;
+    left: 97%;
+}
+.bottom-left{
+    border-right: 4px solid rgba(255, 0, 0, 0.673);
+    bottom: -14%;
+    left: -3%;
+} */
+
+.bottom-right{
+    border-left: 4px solid rgba(255, 0, 0, 0.673) ;
+    bottom: -14%;
+    left: 97%;
+}

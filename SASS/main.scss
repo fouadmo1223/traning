@@ -1,0 +1,27 @@
+@use "./sass/layout/_global-rules";
+@use "./sass/pages/contact";
+
+$alt_color: green;
+header {
+  color: $alt_color;
+}
+
+// nestiing
+.parent {
+  font-size: 20px;
+  .child {
+    color: red;
+  }
+  .grand-child {
+    background-color: green;
+  }
+}
+
+// & => .parent
+.parent {
+  font-size: 20px;
+  &.child {
+    color: red;
+  }
+}
+$theme:'light';

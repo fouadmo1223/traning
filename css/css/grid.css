@@ -1,0 +1,247 @@
+
+/* NOTES */
+/* 
+Grid-Template-columns => [Number of Columns in Grid-Template] => [px , % ,Fraction,repeate, auto , mix of all of them]
+auto => all coulms are equals
+repeate(num of columns , width of each column ) => all columns are equal
+Grid-Template-columns : 100px 20% repeat(2,200px) auto
+
+fraction is gready and auto is shy 
+auto takes the minmum width it could and fraction takes the rest of width
+
+if we want space between sec and aside we but .
+sec sec sec sec sec sec sec sec . aside aside aside
+
+############################# IMPORTANT NOTE #########################
+
+grid-column => the start of the column it takes / the end of the column it takes - 1
+grid-column :1/4 => it will start from first column to the third column
+
+grid-row => the start of the row it takes / the end of the row it takes - 1
+grid-row :1/4 => it will start from first row to the third row
+
+minmax(min width , max width)
+ grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+
+
+############################ IMPORTANT NOTE #########################
+*/
+
+ /* part one  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,calc((100% - 40px)/3));
+    grid-template-rows: 100px 280px;
+  }
+
+  .grid div{
+    position: relative;
+    background-color: #7a7e89;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    counter-increment: element;
+  }
+
+  .grid div::after{
+    content: "Element";
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.grid div::before{
+    content: counter(element);
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    left: 76%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+} */
+
+ /* part two  */
+
+/* .layout{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 50px 1fr 50px ;
+    grid-template-areas: "header header header header header header header header header header header header" "sec sec sec sec sec sec sec sec sec aside aside aside" "foot foot foot foot foot foot foot foot foot foot foot foot";
+}
+header, footer,section,aside{
+    color: white;
+}
+header{
+    padding: 15px;
+    grid-area: header;
+    background-color:lightseagreen
+}
+section{
+    padding: 15px;
+    grid-area: sec;
+    background-color:orangered;
+}
+aside{
+    padding: 15px;
+    grid-area: aside;
+    background-color:rgba(128, 128, 128, 0.843);
+}
+footer{
+    padding: 15px;
+    grid-area: foot;
+    background-color:rgba(30, 128, 0, 0.671);
+}
+header::after{
+    content: "Header";
+    margin-left: 5px;
+}
+section::after{
+    content: "Section";
+    margin-left: 5px;
+}
+aside::after{
+    content: "Aside";
+    margin-left: 5px;
+}
+footer::after{
+    content: "Footer";
+    margin-left: 5px;
+} */
+
+ /* part three  */
+ /* .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    margin-top: 50px;
+    gap: 20px;
+    grid-template-columns: auto repeat(2,1fr) auto;
+    grid-template-rows: 1fr auto;
+  }
+  .grid div{
+    background-color: rgba(0, 0, 0, 0.708);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+ /* part four  */
+ /* .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+ 
+
+  }
+
+  .grid div{
+    background-color: rgb(63, 125, 240);
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid div:nth-child(8){
+    grid-column: 1/13;
+    grid-row: 1;
+  }
+  .grid div:nth-child(2){
+    grid-column: 1/10;
+    grid-row: 2;
+  }
+  .grid div:nth-child(3){
+    grid-column: 10/13;
+    grid-row: 2;
+  }
+  .grid div:nth-child(4){
+    grid-column: 1/4;
+    grid-row: 3;
+  }
+  .grid div:nth-child(5){
+    grid-column: 4/13;
+    grid-row: 3/6;
+  }
+  .grid div:nth-child(6){
+    grid-column: 1/4;
+    grid-row: 4;
+  }
+  .grid div:nth-child(7){
+    grid-column: 1/4;
+    grid-row: 5;
+  }
+
+  .grid div:nth-child(1){
+    grid-column: 1/13;
+    
+  } */
+
+  /* part five */
+
+  /* .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-content: space-between;
+  }
+
+  .grid div{
+    background-color: violet;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  } */

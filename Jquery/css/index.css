@@ -1,0 +1,104 @@
+/* div{
+    width: 200px;
+    height: 200px; 
+    margin: 100px;
+    padding: 20px;
+    background-color: rgba(59, 57, 54, 0.45);
+}
+
+button{
+    margin: 10px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.318);
+    padding: 5px;
+    color: black;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer; 
+
+ }  */
+
+
+.main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main:first-child{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.main select{
+    padding: 10px;
+    font-size: 20px;
+    width: 25%;
+    cursor: pointer;
+
+}
+.main select option{
+    cursor: pointer;
+}
+
+.main #btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    padding: 9px 7px;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid blue;
+    position: relative;
+    transition: width 500ms ease, height 500ms;
+    -webkit-transition: width 500ms ease, height 500ms;
+    -moz-transition: width 500ms ease, height 500ms;
+    -ms-transition: width 500ms ease, height 500ms;
+    -o-transition: width 500ms ease, height 500ms;
+}
+
+#btn::after{
+    content: "";
+    width: 0px;
+    height:100%;
+    position: absolute;
+    background-color: blue;
+    left: 0;
+    top: 0;
+        transition: width 500ms ease; /* Apply transition here */
+    -webkit-transition: width 500ms ease;
+    -moz-transition: width 500ms ease;
+    -ms-transition: width 500ms ease;
+    -o-transition: width 500ms ease;
+    z-index: -1; /* Ensure it stays behind the content */
+
+}
+
+#btn:hover{
+    color: white;
+}
+#btn:hover::after{
+    width: 100%;
+    height:100%;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    z-index: -100;
+}
+
+.main .parent{
+    padding:5px;
+    height: 20px;
+    width: 50%;
+    background-color: rgba(128, 128, 128, 0.433);
+}
+.parent div{
+    background-color: black;
+    height: 100%;
+    width: 10px;
+}

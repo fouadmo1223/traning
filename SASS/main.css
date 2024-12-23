@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+  padding: 20px;
+}
+
+header {
+  color: green;
+}
+
+.parent {
+  font-size: 20px;
+}
+.parent .child {
+  color: red;
+}
+.parent .grand-child {
+  background-color: green;
+}
+
+.parent {
+  font-size: 20px;
+}
+.parent.child {
+  color: red;
+}/*# sourceMappingURL=main.css.map */
